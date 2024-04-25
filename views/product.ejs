@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="product.css">
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Product</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+  <header>
+    <div class="container2">
+
+      <div class="logo">
+        <h1>ALSCARS</h1>
+      </div>
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li class="dropdown">
+                <a href="/used-cars">Used Cars</a>
+
+            </li>
+            <li class="dropdown">
+                <a href="#">Auction</a>
+
+            </li>
+            <li class="dropdown">
+                <a href="/new-cars">New Cars</a>
+
+            </li>
+            <li><a href="">Sell Cars</a></li>
+            <li><a href="">Support</a></li>
+        </ul>
+    </nav>
+
+    <div class="icons">
+
+        <div class="div1">
+            <a href="">Login</a>
+
+
+        </div>
+        <div class="div">
+          <a href="">Sign up</a>
+        </div>
+    </div>
+
+    </div>
+   
+</header>
+
+    <div class="card-container">
+        <% cars.forEach(car => { %>
+            <div class="card">
+                <img src="<%= car.mainImage %>" alt="Car Image">
+                <h1>KES <%= car.price %></h1>
+                <h2><%= car.name %></h2>
+                <div class="flex">
+                    
+                        <p><%= car.year %></p>
+                        <p><%= car.body %></p>
+                        <p><%= car.transmission %></p>
+                        <p><%= car.enginefuel %></p>
+                        <p><%= car.enginesize %></p>
+                  
+                   
+                </div>
+              
+                <div class="view" onclick="viewDetails('<%= car.id %>')" >
+                    <p>View more details</p><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                      </svg></span>
+                </div>
+                
+                
+                
+              
+                
+               
+                
+            </div>
+        <% }) %>
+    </div>
+
+    <footer>
+        <div class="container">
+          
+            <div class="footer-logo">
+              <img src="" alt="Company Logo">
+            </div>
+            <div class="footer-content">
+              <h1>Our Company</h1>
+                <ul>
+                  
+                  <li>Terms & Conditions</li>
+                  <li>Privacy policy</li>
+                  <li>About Us</li>
+                  <li>Contact us</li>
+                </ul>
+             </div>
+             <div class="footer-content">
+              <h1>Get Help</h1>
+              <ul>
+                <li>FAQs</li>
+                <li>Shipping</li>
+                <li>Returns</li>
+                <li>Payment options</li>
+              </ul>
+            </div>
+            <div class="footer-content">
+              <h1>Explore</h1>
+              <ul>
+                <li>Used cars</li>
+                <li>New cars</li>
+                <li>Auction</li>
+                <li>Sell cars</li>
+                
+              </ul>
+            </div>
+            <div class="footer-content">
+              <p>&copy; 2024 Car Selling Company. All rights reserved.</p>
+              <p>123 Main Street, City, Country</p>
+              <p>Email: info@carsellingcompany.com</p>
+              <p>Phone: +123 456 7890</p>
+            </div>
+        </div>
+      </footer>
+
+
+
+      
+    <script>
+        function viewDetails(carId) {
+    window.location.href = '/product/' + carId;
+       }
+    </script>
+</body>
+</html>

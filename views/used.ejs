@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="used.css">
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Product</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+  <header>
+    <div class="container2">
+
+      <div class="logo">
+        <h1>ALSCARS</h1>
+      </div>
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li class="dropdown">
+                <a href="/used-cars">Used Cars</a>
+
+            </li>
+            <li class="dropdown">
+                <a href="#">Auction</a>
+
+            </li>
+            <li class="dropdown">
+                <a href="/new-cars">New Cars</a>
+
+            </li>
+            <li><a href="">Sell Cars</a></li>
+            <li><a href="">Support</a></li>
+        </ul>
+    </nav>
+
+    <div class="icons">
+
+        <div class="div1">
+            <a href="">Login</a>
+
+
+        </div>
+        <div class="div">
+          <a href="">Sign up</a>
+        </div>
+    </div>
+
+    </div>
+   
+</header>
+<section class="section">
+      <div class="left">
+       <form action="/filter" class="form" method="post">
+        <div style="display: flex; width: 100%; height: auto; justify-content: space-between; align-items: center;">
+         <label for="">Filter</label>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sliders2" viewBox="0 0 16 16">
+         <path fill-rule="evenodd" d="M10.5 1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4H1.5a.5.5 0 0 1 0-1H10V1.5a.5.5 0 0 1 .5-.5M12 3.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m-6.5 2A.5.5 0 0 1 6 6v1.5h8.5a.5.5 0 0 1 0 1H6V10a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5M1 8a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2A.5.5 0 0 1 1 8m9.5 2a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V13H1.5a.5.5 0 0 1 0-1H10v-1.5a.5.5 0 0 1 .5-.5m1.5 2.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"/>
+         </svg>
+        </div>
+        
+        <div class="line" style="display: flex; width: 100%; background-color: #1c1c1c; height: 1px; margin-top: 10px;margin-bottom: 10px;"></div>
+            <div class="flex">
+                <label for="">Brand</label>
+                <div class="select-menu" id="makeSelectMenu">
+                    <div class="selectbtn">
+                       <span class="sBtntext" style="font-size: 13px;"></span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#1c1c1c" class="dropdown-arrow" viewBox="0 0 16 16">
+                               <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                            </svg>
+                  </div>
+                  <input type="hidden" id="makeInput" name="make" />
+    
+               <ul class="options">
+    <li class="option"><span class="option-text">Audi</span></li>
+    <li class="option"><span class="option-text">Aston martin</span></li>
+    <li class="option"><span class="option-text">BMW</span></li>
+    <li class="option"><span class="option-text">Bentley</span></li>
+    <li class="option"><span class="option-text">Hyundai</span></li>
+    <li class="option"><span class="option-text">Mercedes</span></li>
+    <li class="option"><span class="option-text">Porsche</span></li>
+    <li class="option"><span class="option-text">Mazda</span></li>
+    <li class="option"><span class="option-text">Toyota</span></li>
+    <li class="option"><span class="option-text">Volkswagen</span></li>
+                 </ul>
+               </div>
+            </div>
+    
+           <div class="flex">
+            <label for="">Model</label>
+            <div class="select-menu1" id="modelSelectMenu">
+                <div class="selectbtn1">
+                  <span class="sBtntext1" style="font-size: 13px;" ></span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#1c1c1c" class="dropdown-arrow" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                  </svg>
+                </div>
+                <input type="hidden" id="modelInput" name="model" />
+                <ul class="options1">
+                  <li class="option1"><span class="option-text"></span></li>
+    
+                </ul>
+              </div>
+           </div>
+
+           <div class="flex">
+            <label for="">Body Style</label>
+            <div class="select-menu2" id="bodySelectMenu">
+                <div class="selectbtn2">
+                   <span class="sBtntext2" style="font-size: 13px;"></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#1c1c1c" class="dropdown-arrow" viewBox="0 0 16 16">
+                           <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                        </svg>
+              </div>
+              <input type="hidden" id="bodyInput" name="body" />
+
+           <ul class="options2">
+              <li class="option"><span class="option-text">SUV</span></li>
+              <li class="option"><span class="option-text">Hatch back</span></li>
+              <li class="option"><span class="option-text">Sedan</span></li>
+              <li class="option"><span class="option-text">Coupe</span></li>
+              <li class="option"><span class="option-text">Wagon</span></li>
+            <li class="option"><span class="option-text">Saloon</span></li>
+            <li class="option"><span class="option-text">Crossover</span></li>
+            <li class="option"><span class="option-text">Convertible</span></li>
+            
+             </ul>
+           </div>
+           </div>
+<div class="line" style="display: flex; width: 100%; background-color: #1c1c1c; height: 1px; margin-top: 10px;margin-bottom: 10px;"></div>
+  
+          
+      
+
+           <button style="cursor: pointer;">Filter</button>
+          
+        
+       </form>
+      </div>
+
+      <div class="right">
+        <div class="card-container">
+            <% let cardCount = 0; %>
+            <div class="card-row">
+                <% cars.forEach((car, index) => { %>
+                    <% if (cardCount < 4) { %>
+                        <div class="card">
+                            <img src="<%= car.mainImage %>" alt="Car Image">
+                            <h1>KES <%= car.price %></h1>
+                            <h2><%= car.name %></h2>
+                            <div class="flex">
+                                <p><%= car.year %></p>
+                                <p><%= car.body %></p>
+                                <p><%= car.transmission %></p>
+                                <p><%= car.engineFuel %></p> <!-- Modified from car.enginefuel to car.engineFuel -->
+                                <p><%= car.engineSize %></p> <!-- Modified from car.enginesize to car.engineSize -->
+                            </div>
+                            <div class="view" onclick="viewDetails('<%= car.id %>')">
+                                <p>View more details</p>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <% cardCount++; %>
+                    <% } else { %>
+                        </div> <!-- Close previous card-row -->
+                        <div class="card-row">
+                            <% cardCount = 0; %>
+                    <% } %>
+                <% }) %>
+            </div> <!-- Close last card-row -->
+        </div>
+      </div>
+   
+
+</section>
+
+
+
+    <footer>
+        <div class="container">
+          
+            <div class="footer-logo">
+              <img src="" alt="Company Logo">
+            </div>
+            <div class="footer-content">
+              <h1>Our Company</h1>
+                <ul>
+                  
+                  <li>Terms & Conditions</li>
+                  <li>Privacy policy</li>
+                  <li>About Us</li>
+                  <li>Contact us</li>
+                </ul>
+             </div>
+             <div class="footer-content">
+              <h1>Get Help</h1>
+              <ul>
+                <li>FAQs</li>
+                <li>Shipping</li>
+                <li>Returns</li>
+                <li>Payment options</li>
+              </ul>
+            </div>
+            <div class="footer-content">
+              <h1>Explore</h1>
+              <ul>
+                <li>Used cars</li>
+                <li>New cars</li>
+                <li>Auction</li>
+                <li>Sell cars</li>
+                
+              </ul>
+            </div>
+            <div class="footer-content">
+              <p>&copy; 2024 Car Selling Company. All rights reserved.</p>
+              <p>123 Main Street, City, Country</p>
+              <p>Email: info@carsellingcompany.com</p>
+              <p>Phone: +123 456 7890</p>
+            </div>
+        </div>
+      </footer>
+
+
+
+      
+    <script>
+        function viewDetails(carId) {
+    window.location.href = '/product/' + carId;
+       }
+    </script>
+
+
+<script>
+    const optionMenu = document.querySelector('.select-menu');
+    const selectbtn = optionMenu.querySelector('.selectbtn');
+    const options = optionMenu.querySelectorAll('.option');
+    const sBtntext = optionMenu.querySelector('.sBtntext');
+    const makeInput = document.getElementById('makeInput'); // Move this outside the event listener
+
+    selectbtn.addEventListener("click", () => optionMenu.classList.toggle("active"));
+
+    options.forEach(option => {
+      option.addEventListener("click", () => {
+        let selectedOption = option.querySelector('.option-text').innerText;
+        sBtntext.innerText = selectedOption;
+        optionMenu.classList.remove("active");
+
+        // Set the value in the hidden input field with ID "makeInput"
+        makeInput.value = selectedOption;
+      });
+    });
+</script>
+
+<script>
+    const optionMenu2 = document.querySelector('.select-menu2');
+    const selectbtn2 = optionMenu2.querySelector('.selectbtn2');
+    const options2 = optionMenu2.querySelectorAll('.option');
+    const sBtntext2 = optionMenu2.querySelector('.sBtntext2');
+    const bodyInput = document.getElementById('bodyInput'); // Move this outside the event listener
+
+    selectbtn2.addEventListener("click", () => optionMenu2.classList.toggle("active"));
+
+    options2.forEach(option => {
+      option.addEventListener("click", () => {
+        let selectedOption2 = option.querySelector('.option-text').innerText;
+        sBtntext2.innerText = selectedOption2;
+        optionMenu2.classList.remove("active");
+
+        // Set the value in the hidden input field with ID "bodyInput"
+        bodyInput.value = selectedOption2;
+      });
+    });
+</script>
+
+
+<script>
+    const makeSelectMenu = document.getElementById('makeSelectMenu');
+    const makeInput1 = document.getElementById('makeInput');
+
+    const modelSelectMenu = document.getElementById('modelSelectMenu');
+    const modelInput = document.getElementById('modelInput');
+    const sBtntext1 = modelSelectMenu.querySelector('.sBtntext1');
+
+    makeSelectMenu.addEventListener('click', async () => {
+      // Fetch models based on the selected make
+      const selectedMake = makeInput1.value;
+      const response = await fetch(`/models?make=${selectedMake}`);
+      const models = await response.json();
+
+      // Clear existing options in modelSelectMenu
+      clearModelOptions();
+
+      // Add new options based on fetched models
+      models.forEach(model => {
+        const newOption = createModelOption(model);
+        modelSelectMenu.querySelector('.options1').appendChild(newOption);
+      });
+    });
+
+    modelSelectMenu.querySelector('.selectbtn1').addEventListener('click', () => {
+      modelSelectMenu.classList.toggle('active');
+    });
+
+    function clearModelOptions() {
+      modelSelectMenu.querySelectorAll('.option1').forEach(option => option.remove());
+    }
+
+    function createModelOption(model) {
+      const newOption = document.createElement('li');
+      newOption.classList.add('option1');
+      newOption.innerHTML = `<span class="option-text">${model}</span>`;
+      newOption.addEventListener('click', () => {
+        sBtntext1.innerText = model;
+        modelInput.value = model;
+        modelSelectMenu.classList.remove('active');
+      });
+      return newOption;
+    }
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
